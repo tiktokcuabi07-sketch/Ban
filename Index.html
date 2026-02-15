@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnackHub - Đồ Ăn Vặt Ngon Nhất</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+  <style>
+  :root {
+    --primary: #ff6b6b;
+    --primary-dark: #e55a5a;
+    --dark: #2d2d2d;
+    --light: #f8f9fa;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+  </style>
+  <header>
+  <nav>
+    <a href="#" class="logo">SnackHub</a>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    background: linear-gradient(135deg, var(--primary), #ff8e53);
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+
+  .cart-icon {
+    font-size: 1.6rem;
+    position: relative;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: white;
+    color: var(--primary);
+    font-size: 0.75rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+</style>
+  <style>
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.9rem 2.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.4);
+  }
+
+  .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255,107,107,0.5);
+  }
+  </style>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Đồ Ăn Vặt Gây Nghiện!</h1>
+    <p>Giao nhanh 30 phút • Miễn phí ship từ 199k • Hoàn tiền 111% nếu không ngon</p>
+    <a href="#san-pham" class="btn">Mua Ngay</a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background: url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    height: 60vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+</style>
+  https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=8030
+  <div class="container">
+  <h2 class="section-title" id="san-pham">Sản Phẩm Nổi Bật</h2>
+
+<style>
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+  }
+
+  h2.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  h2.section-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+</style
+  <div class="products-grid">
+  <div class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1621447348720-9e9c9c0b0e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Khoai tây cay">
+      </div>
+      <div class="product-info">
+        <h3>Khoai Tây Lát Cay Hàn Quốc</h3>
+        <div class="price">45.000đ</div>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+      </div>
+    </div>https://images.unsplash.com/photo-1621447348720-9e9c9c0b0e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+  <style>
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+  }
+
+  .product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+
+  .product-img {
+    height: 220px;
+    overflow: hidden;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+  }
+
+  .product-card:hover .product-img img {
+    transform: scale(1.08);
+  }
+
+  .product-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .product-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 0.8rem 0;
+  }
+
+  .add-to-cart {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  .add-to-cart:hover {
+    background: var(--primary-dark);
+  }
+</style>
+    </div> <!-- kết thúc products-grid -->
+</div> <!-- kết thúc container -->
+  <footer>
+  <p>© 2026 SnackHub - Đồ ăn vặt giao tận nơi • Hotline: 847.929.781</p>
+</footer>
+
+<style>
+  footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+  }
+</style>
+      <script>
+  let cartCount = 0;
+  const cartDisplay = document.querySelector('.cart-count');
+  const addButtons = document.querySelectorAll('.add-to-cart');
+
+  addButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      cartCount++;
+      cartDisplay.textContent = cartCount;
+      
+      btn.textContent = "Đã thêm!";
+      btn.style.background = "#4caf50";
+      setTimeout(() => {
+        btn.textContent = "Thêm vào giỏ";
+        btn.style.background = "var(--primary)";
+      }, 1500);
+    });
+  });
+      </script>cartDisplay.textContentbtn.style.backgroundbtn.
+  textContent
+  </body>
+</html>
+
+  
